@@ -14,7 +14,7 @@ For far too long, the gaming meta has converged upon arbitrarily rewarding a cer
 
 In NULL, the player resides at the zero vector on the coordinate plane.  Already, we have breached the implicit trust of the player by introducing a plane into the context of gameplay.  This is because the 2 dimensional representation of Nullity is familiar to the player; do not fret, gameplay truly takes place in 0 dimensions.
 
-The player's goal is to maximize points.  The player can earn points by clicking with the LMB.  Additionally, the player will have opportunities to interact with the environment to earn points and achievements as well.
+The player's goal is to maximize points.  The player can earn point multipliers by clicking with the LMB.  Additionally, the player will have opportunities to interact with the environment to earn multipliers and achievements as well.
 
 ![readme1.png](readme1.png)
 
@@ -26,11 +26,25 @@ Very obviously, fewer dimensions are optimal.
 - Straight forward level design
 - Accessible controls
 - Scalable design (0x0 = 0)
+- clicks increase multiplier
+- 1 click = 0 points
+- unplugging peripherals icreases multiplier
 
 
 ## Todo
-- [ ] DLC - NULL: Origigns
+- [ ] DLC - NULL: Origins
+- [ ] Optimal system settings
 - [ ] Implement achievement system
 - [ ] Develop robust graphics assets
     - [ ] 3D model of level_1_boss.obj
     - [ ] Sprite sheet for the player (see mockup)
+- [ ] Unlock player
+- [ ] Unlock multiplier
+- [ ] Unlock cursor
+- [ ] Detect hardware
+- [ ] Write lore
+    - [ ] AvoidTheFifth
+    - [ ] Time Cube
+    - [ ] Higher dimensions = bad
+    - [ ] Arithmoquine
+- [ ] 
