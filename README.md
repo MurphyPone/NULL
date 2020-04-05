@@ -26,13 +26,9 @@ Very obviously, fewer dimensions are optimal.
 - Straight forward level design
 - Accessible controls
 - Scalable design (0x0 = 0)
-- clicks increase multiplier
-- 1 click = 0 points
-- unplugging peripherals icreases multiplier
-
 
 ## Todo
-- [ ] DLC - NULL: Origins
+- [ ] DLC - NULL: Origins, ($0.00)
 - [ ] Optimal system settings
 - [ ] Implement achievement system
 - [ ] Develop robust graphics assets
@@ -47,4 +43,14 @@ Very obviously, fewer dimensions are optimal.
     - [ ] Time Cube
     - [ ] Higher dimensions = bad
     - [ ] Arithmoquine
-- [ ] 
+    - [ ] Cuil Theory 
+- [ ] Bring cursor to center for higher multiplier
+- [ ] Render a stack unlockables
+- [ ] window.isFocused()
+- [ ] clicks increase multiplier
+- [ ] 1 click = multiplier += 0.1 points
+    - [ ] builds up over time
+- [ ] Track high score, multiplier 
+- [ ] Unplugging peripherals increases multiplier
+- [ ] Key logger
+- [ ] End game color 
