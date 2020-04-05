@@ -11,7 +11,7 @@ score_highscore = 0
 -- Multiplier variables 
 multiplier = 0.0
 multiplier_index = 1
-multipliers = {0.1, 0.25, 0.5, 0.75, 1}           -- Multiplier amt increases with each checkpoint
+multipliers = {1, 0.25, 0.5, 0.75, 1}           -- Multiplier amt increases with each checkpoint
 multiplier_amt = multipliers[multiplier_index]    
 multiplier_highscore = multiplier
 

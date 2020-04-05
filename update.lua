@@ -3,7 +3,7 @@
 -- Detects if the player has the window focused and keeps their score at 0 if it is 
 function is_focused(dt)
     if not love.window.hasFocus() then
-        score = score + 10 * dt
+        score = score + (1 * multiplier* dt)
     else 
         score = 0
     end
@@ -44,21 +44,33 @@ end
 --  then just wiggle the mouse around a bunch
 --  Implement smooth movement https://love2d.org/forums/viewtopic.php?t=33140 
 function move_cursor(dt) 
-    local move_amt = 0.05*dt
+    local move_amt = 100*dt
     local curr_x, curr_y = love.mouse.getPosition()
 
     local new_x, new_y
 
-    if curr_x >= WIDTH/2 then
-        new_x = curr_x + (curr_x * (-move_amt))
-    else
-        new_x = curr_x - (curr_x * (-move_amt))
+    -- Q4
+    if curr_x >= WIDTH/2 and curr_y >= HEIGHT/2 then
+        new_x = curr_x - move_amt
+        new_y = curr_y - move_amt
     end 
 
-    if curr_y >= HEIGHT/2 then
-        new_y = curr_y + (curr_y * (-move_amt))
-    else
-        new_y = curr_y - (curr_y * (-move_amt))
+    -- Q2
+    if curr_x < WIDTH/2 and curr_y < HEIGHT/2 then
+        new_x = curr_x + move_amt
+        new_y = curr_y + move_amt
+    end 
+
+    -- Q1
+    if curr_x >= WIDTH/2 and curr_y < HEIGHT/2 then
+        new_x = curr_x - move_amt
+        new_y = curr_y + move_amt
+    end 
+
+    -- Q3
+    if curr_x < WIDTH/2 and curr_y >= HEIGHT/2 then
+        new_x = curr_x + move_amt
+        new_y = curr_y - move_amt
     end 
 
     love.mouse.setPosition(new_x, new_y)
