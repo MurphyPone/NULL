@@ -1,4 +1,5 @@
 -- Contains all the drawing methods
+local right_align = 80 -- where the stat values are drawn TODO 
 
 -- Draws the player at 0,0, duh
 function draw_player()

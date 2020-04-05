@@ -44,52 +44,34 @@ end
 -- If the mouse is farther than $radius away, then move the mouse towards the center,
 --  then just wiggle the mouse around a bunch
 --  Implement smooth movement https://love2d.org/forums/viewtopic.php?t=33140 
+function move_cursor(dt) 
+    local move_amt = 100*dt
+    local curr_x, curr_y = love.mouse.getPosition()
 
-    function move_cursor(dt) 
-        local move_amt = 100*dt
-        local curr_x, curr_y = love.mouse.getPosition()
-    
-        local new_x, new_y
-    
-        -- Q4
-        if curr_x >= WIDTH/2 and curr_y >= HEIGHT/2 then
-            new_x = curr_x - move_amt
-            new_y = curr_y - move_amt
-        end 
-    
-        -- Q2
-        if curr_x < WIDTH/2 and curr_y < HEIGHT/2 then
-            new_x = curr_x + move_amt
-            new_y = curr_y + move_amt
-        end 
-    
-        -- Q1
-        if curr_x >= WIDTH/2 and curr_y < HEIGHT/2 then
-            new_x = curr_x - move_amt
-            new_y = curr_y + move_amt
-        end 
-    
-        -- Q3
-        if curr_x < WIDTH/2 and curr_y >= HEIGHT/2 then
-            new_x = curr_x + move_amt
-            new_y = curr_y - move_amt
-        end 
-            
-    
-        -- if curr_x >= WIDTH/2 then
-        --     new_x = curr_x - move_amt
-        -- else
-        --     new_x = curr_x + move_amt
-        -- end 
-    
-        -- if curr_y >= HEIGHT/2 then
-        --     new_y = curr_y - move_amt
-        -- else
-        --     new_y = curr_y + move_amt
-        -- end 
-    
-        
-    
-        love.mouse.setPosition(new_x, new_y)
+    local new_x, new_y
+
+    -- Q4
+    if curr_x >= WIDTH/2 and curr_y >= HEIGHT/2 then
+        new_x = curr_x - move_amt
+        new_y = curr_y - move_amt
+    end 
+
+    -- Q2
+    if curr_x < WIDTH/2 and curr_y < HEIGHT/2 then
+        new_x = curr_x + move_amt
+        new_y = curr_y + move_amt
+    end 
+
+    -- Q1
+    if curr_x >= WIDTH/2 and curr_y < HEIGHT/2 then
+        new_x = curr_x - move_amt
+        new_y = curr_y + move_amt
+    end 
+
+    -- Q3
+    if curr_x < WIDTH/2 and curr_y >= HEIGHT/2 then
+        new_x = curr_x + move_amt
+        new_y = curr_y - move_amt
+
     end 
 
