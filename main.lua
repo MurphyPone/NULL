@@ -25,6 +25,7 @@ checkpoint = checkpoints[checkpoint_index]
 
 
 function love.load() 
+    love.system.vibrate(5)
 end 
 
 -- Used to display things
