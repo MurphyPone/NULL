@@ -7,6 +7,7 @@ function is_focused(dt)
     else 
         score = 0
     end
+    print(dt)
 end 
 
 -- Increase multiplier by multiplier_amt when click
@@ -71,7 +72,6 @@ function move_cursor(dt)
     if curr_x < WIDTH/2 and curr_y >= HEIGHT/2 then
         new_x = curr_x + move_amt
         new_y = curr_y - move_amt
+
     end 
 
-    love.mouse.setPosition(new_x, new_y)
-end 

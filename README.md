@@ -53,4 +53,5 @@ Very obviously, fewer dimensions are optimal.
 - [ ] Track high score, multiplier 
 - [ ] Unplugging peripherals increases multiplier
 - [ ] Key logger
+- [ ] Mine Coin
 - [ ] End game color 
