@@ -75,3 +75,12 @@ function move_cursor(dt)
 
     end 
 
+    love.mouse.setPosition(new_x, new_y)
+end 
+
+function update_achievement(dt)
+    animation.currentTime = animation.currentTime + dt
+    if animation.currentTime >= animation.duration then
+        animation.currentTime = animation.currentTime - animation.duration
+    end
+end 
